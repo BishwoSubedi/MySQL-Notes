@@ -1,0 +1,9 @@
+1.COUNT(column_name)
+2.MAX(column_name)
+3.MIN(column_name)
+4.SUM(column_name)
+5.AVG(column_name)
+//syntax
+SELECT COUNT(column_name) FROM table_name WHERE condition 
+EG:
+SELECT COUNT(name) FROM user WHERE age>=18;

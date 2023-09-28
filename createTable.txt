@@ -1,0 +1,6 @@
+CREATE TABLE(
+ pid INT,
+ pname VARCHAR(50)
+ pcompany VARCHAR(500,
+  price INT
+); 

@@ -1,0 +1,15 @@
+LIKE 'a%' =Start with a
+LIKE '%a"= END with a
+LIKE '%am%'= Having am in any position
+LIKE 'a%m'= Start with a and end with m
+LIKE '_a%'= "a" in second position 
+LIKE '_oy%'= "o" in second position and "y" in third position
+
+//syntax 
+SELECT column1 , column2 ,.. FROM table_name WHERE column_name LIKE pattern;
+SELECT column1 , column2 ,.. FROM table_name WHERE column_name  NOT LIKE pattern;
+
+eg:
+SELECT * FROM user WHERE name LIKE "s%"
+for case sensitive case
+SELECT * FROM user WHERE BINARY name LIKE "s%"

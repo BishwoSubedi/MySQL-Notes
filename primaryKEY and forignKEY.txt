@@ -1,0 +1,30 @@
+1.PRIMARY KEY
+-primary key has unique data
+-a primary key cannt have null value
+-a table can contain only one primary key constraint
+
+//Syntax
+CREATE TABLE table_name(
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+age INT NOT NULL,
+PRIMARY KEY(id)
+);
+-to make primary key in any column of table which already exist 
+//SYNTAX
+ALTER table_name ADD PRIMARY KEY(id)
+
+
+2. FOREIGN KEY
+- A FOREIGN KEY is used to link two tables
+- A FOREIGN KEY in one table used to point PRIMARY KEY in another table.
+//Syntax
+CREATE TABLE table_name(
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+age INT NOT NULL,
+city VARCHAR(50) NOT NULL,
+PRIMARY KEY(id),
+FOREIGN KEY(city) REFERENCES City(cid)
+//FOREIGN KEY column_name REFERENCES table_name(PRIMARY KEY)
+);

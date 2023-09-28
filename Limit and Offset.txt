@@ -1,0 +1,10 @@
+1.LIMIT 
+//to see limited data
+
+//SYNTAX 
+SELECT column1,column2,column3,... FROM table_name WHERE condition LIMIT number ;
+
+2.OFFSET
+LIMIT offset,number
+-starting from and having limit
+SELECT * FROM user LIMIT 3,3;

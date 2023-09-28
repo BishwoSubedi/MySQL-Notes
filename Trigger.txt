@@ -1,0 +1,34 @@
+-TRIGGERS are stored pprograms /procedures , which are automatically executed or fired when some events occur.
+Events Can be as Follows:
+1.Database manipulation(DML):- DELETE,INSERT OR UPDATE
+2.Database Defination : statement like CREATE, ALTER or DROP
+3.Database Operation :- LOGON,LOGOFF,STARTUP, or SHUTDOWN
+
+Triggers can be defined on the table,view,schema or database with which event is associated.
+
+//Syntax
+
+CREATE[OR REPLACE] TRIGGER trigger_name
+{Before|After}
+{INSERT [OR] UPDATE [OR] DELETE
+ON table_name
+[FOR each row]
+
+DECLARE
+Decleration statements
+BEGIN
+Executable statements 
+END
+
+//Example
+CREATE TRIGGER salary_difference
+BEFORE INSERT OR DELETE OR UPDATE ON employee
+FOR EACH ROW
+DECLARE 
+salary_difference number;
+BEGIN
+salary_difference:=:new.salary-:old.salary;
+dbms_output.put_line('Old Salary:'||:old.salary);
+dbms_output.put_line('New Salary:'||:new.salary);
+dbms_output.put_line('Salary Difference:'||:salary_difference);
+end;

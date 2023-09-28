@@ -1,0 +1,11 @@
+INSERT INTO table_name (column1 ,column 2,...) VALUES (value1 ,value2...)
+
+eg:
+INSERT INTO personal(id,name,age,phone) VALUES (1, "Bishwo", 23, 986743439)  
+
+//INSERTING MULTIPLE DATA
+
+INSERT INTO personal(id,name,age,phone) VALUES 
+(1, "Bishwo", 23, 986743439),
+(2, "Ramesh", 25, 986743439),
+(3, "Ram", 23, 9864);

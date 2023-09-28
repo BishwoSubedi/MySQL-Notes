@@ -1,0 +1,30 @@
+1) IF clause 
+-use to create custom columns on the basis of given condition
+//syntax
+SELECT column1,column2 , IF(condition,true result, false result) AS alias_name FROM table_name;
+
+Example :
+SELECT id,name,percentage , IF (percentage>=33,"PASS","FAIL") AS Result FROM students;
+
+2)Case Statement
+ //syntax 
+ SELECT column1,column2 
+CASE 
+WHEN condition1 THEN result1
+WHEN condition2 THEN result2
+WHEN condition3 THEN result3
+ELSE result alias_name
+END AS alias_name
+FROM table_name
+
+
+Example 
+SELECT id,name,percentage
+CASE
+WHEN percentage>=80 AND percentage <=100 THEN "Distinction"
+WHEN percentage>=60 AND percentage <80 THEN "First Division"
+WHEN percentage>=40 AND percentage <60 THEN "Second Division"
+WHEN percentage <40 THEN "FAIL"
+ELSE "NOT Correct %"
+END AS Grade
+FROM student_table

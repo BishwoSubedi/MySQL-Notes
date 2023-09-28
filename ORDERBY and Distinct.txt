@@ -1,0 +1,19 @@
+
+1.ORDER BY
+-to arrange in order i.e. Shorting
+
+//Syntax 
+ORDER BY NAME ASC
+ORDER BY NAME DESC
+
+SELECT * FROM table_name ORDER BY column1 , column2 .. ASC |DESC 
+
+e.g.  SELECT * FROM user WHERE city="pokhara" ORDER BY age ASC;
+
+2.DISTINCT 
+-to remove duplikacy 
+
+//syntax
+SELECT DISTINCT  column1,column2 .. FROM table_name
+
+for eg: SELECT DISTINCT age FROM user ORDER BY age;

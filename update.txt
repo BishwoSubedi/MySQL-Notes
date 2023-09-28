@@ -1,0 +1,6 @@
+//SYNTAX
+UPDATE table_name SET column_name1=value1, column_name2=value2,...
+WHERE condition;
+
+eg:
+UPDATE user SET phone="40556333" WHERE id=1;

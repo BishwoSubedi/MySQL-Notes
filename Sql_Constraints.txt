@@ -1,0 +1,15 @@
+//Constraints means restriction
+-NOTNULL
+-CHECK(age>=180
+-UNIQUE
+-DEFAULT 'pokhara'
+
+
+//use
+CREATE TABLE user(
+id INT NOT NULL UNIQUE,
+name VARCHAR(50) NOT NULL,
+age INT NOT NULL CHECK(age>1=8),
+phone VARCHAR(50) NOTNULL,
+city VARCHAR(50) DEFAULT 'pokhara',
+);

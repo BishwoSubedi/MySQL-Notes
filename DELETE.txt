@@ -1,0 +1,5 @@
+//SYNTAX
+ DELETE FROM table_name WHERE condition;
+
+eg:
+DELETE FROM user WHERE name="ram";

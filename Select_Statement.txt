@@ -1,0 +1,21 @@
+SELECT column1 ,column2 ,... FROM table_name
+or
+SELECT * FROM table_name
+
+eg:
+SELECT age ,name FROM user
+
+//conditional base statement 
+ 
+SELECT * FROM table_name WHERE condition;
+ eg:
+SELECT name , age FROM user WHERE gender="F" AND age<20;
+SELECT name , age FROM user WHERE( gender="F" OR city="pokhara") AND age<20;
+
+//conditions operator
+AND 
+OR
+NOT
+BETWEEN
+eg:(WHERE age BETWEEN 18 AND 20)
+SELECT age ,name,DOB FROM student WHERE DOB BETWEEN 2000 AND 2010

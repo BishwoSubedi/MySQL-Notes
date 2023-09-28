@@ -1,0 +1,5 @@
+//syntax 
+SELECT columns FROM table1 INNER JOIN table2 ON table1.column_name=table2.column_name INNER JOIN table3 ON table1.column_name=table3.column_name
+
+Example:
+SELECT p.id,p.name,p.age,p.gender,c.cityname,cr.course_name FROM user u JOIN city c ON p.city=c.cid JOIN courses c ON p.courses =cr.course_id WHERE cityname="pokhara" ;
